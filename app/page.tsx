@@ -121,7 +121,6 @@ export default function Home() {
                       <h3 className="font-semibold text-gray-900">
                         {result.prediction === "Genuine" ? "Genuine Email" : "Spam Detected"}
                       </h3>
-                      <p className="text-sm text-gray-600 mt-1">Confidence: {(result.confidence * 100).toFixed(1)}%</p>
                     </div>
                   </div>
                 </div>
