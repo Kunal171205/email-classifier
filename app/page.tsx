@@ -74,7 +74,7 @@ export default function Home() {
           <CardHeader className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-t-lg">
             <CardTitle>Classify Your Email</CardTitle>
             <CardDescription className="text-indigo-100">
-              Paste your email content below to check if it's spam or legitimate
+              Paste your email content below to check if it's spam or Genuine
             </CardDescription>
           </CardHeader>
 
@@ -115,11 +115,11 @@ export default function Home() {
                 <div className="p-4 rounded-lg border-2 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
                   <div className="flex items-start gap-3">
                     <span className="text-2xl flex-shrink-0 mt-0.5">
-                      {result.prediction === "Legitimate" ? "✓" : "✗"}
+                      {result.prediction === "Genuine" ? "✓" : "✗"}
                     </span>
                     <div className="flex-1">
                       <h3 className="font-semibold text-gray-900">
-                        {result.prediction === "Legitimate" ? "Legitimate Email" : "Spam Detected"}
+                        {result.prediction === "Genuine" ? "Genuine Email" : "Spam Detected"}
                       </h3>
                       <p className="text-sm text-gray-600 mt-1">Confidence: {(result.confidence * 100).toFixed(1)}%</p>
                     </div>
